@@ -30,6 +30,15 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
+
+	
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.26</version> <!-- Vérifiez la dernière version sur Maven Central -->
+        <scope>provided</scope> 
+	</dependency>
+    <!-- ... autres dépendances ... -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
