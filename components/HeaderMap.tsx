@@ -101,7 +101,7 @@ export function HeaderMap() {
           <NavigationMenu className=" text-black-100 ">
             <NavigationMenuList className="gap-2">
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-white-50 font-inter p-2 bg-green-900 rounded-sm ">Elections Presidentielles</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-white-50 font-inter p-2 bg-[#093B14] rounded-sm ">Elections Presidentielles</NavigationMenuTrigger>
                 <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -117,7 +117,7 @@ export function HeaderMap() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-white-50 font-inter p-2 bg-green-900 rounded-sm">Carte</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-white-50 font-inter p-2 bg-[#093B14] rounded-sm">Carte</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                     <li className="row-span-3">
@@ -156,7 +156,7 @@ export function HeaderMap() {
         <div className="flex items-center gap-[18px] font-inter text-paragraph-md">
             <CountDown targetDate={targetDate} />
           <Button
-            className="flex items-center bg-outline border-2  p-1.5 rounded-md text-white-50 " 
+            className="flex items-center bg-transparent hover:bg-[#ffffff1b] border-2  p-1.5 rounded-md text-white-50 " 
             >
             <GlobeIcon className="text-[24px]"/>
             FR

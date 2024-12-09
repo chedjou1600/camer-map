@@ -17,11 +17,13 @@ const CountDown = ({ targetDate }: { targetDate: string }) => {
       const days = Math.floor(difference / (1000 * 60 * 60 * 24));
       const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
       const minutes = Math.floor((difference / (1000 * 60)) % 60);
+      const seconds = Math.floor((difference / 1000) % 60);;
 
       setTimeLeft(
         `${days < 0 ? "-" : ""}${Math.abs(days)} jour(s) ` +
         `${String(hours).padStart(2, '0')} hr(s) ` +
-        `${String(minutes).padStart(2, '0')} min(s)`
+        `${String(minutes).padStart(2, '0')} min(s) ` +
+        `${String(seconds).padStart(2, '0')} sec(s)`
       );
     };
 
@@ -32,7 +34,7 @@ const CountDown = ({ targetDate }: { targetDate: string }) => {
   }, [targetDate]);
 
   return (
-    <p className="p-2 bg-red-900 text-white-50 rounded-sm">
+    <p className="p-2 bg-[#4E0E07] text-white-50 rounded-sm">
       {timeLeft}
     </p>
   );
