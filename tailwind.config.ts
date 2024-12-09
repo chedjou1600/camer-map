@@ -137,6 +137,9 @@ const config: Config = {
   				'800': '#D8D8D8',
   				'900': '#E5E5E5'
   			},
+			gradientStart: "#1A3441", // Couleur de départ du dégradé
+			gradientMiddle: "#284F5E", // Couleur intermédiaire
+			gradientEnd: "#376B7D",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

@@ -1,13 +1,17 @@
-
+import React from "react";
 import { HeaderMap } from "@/components/HeaderMap";
 import HeroMap from "@/components/HeroMap";
 
 
-export default function Home() {
+const page = () => {
   return (
+    
     <div >
       <HeaderMap/>
       <HeroMap/>
     </div>
+  
   );
-}
+};
+
+export default page;

@@ -15,6 +15,9 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 import Image from "next/image"
+import CountDown from "./CountDown"
+
+const targetDate="2024-12-19T07:20:00";
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
@@ -80,7 +83,7 @@ const components: { title: string; href: string; description: string }[] = [
   },
 ]
 
-export function Header() {
+export function HeaderMap() {
   return (
     <header className=" fixed top-0 left-0 w-full  z-50">
       <div className=" mx-auto flex justify-between items-center px-16 py-1.5">
@@ -148,18 +151,10 @@ export function Header() {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-{/*           <a href="#marketplace" className="text-black-100  hover:text-accent-500">
-            Marketplace
-          </a>
-          <a href="#pricing" className="text-black-100  hover:text-accent-500">
-            Pricing
-          </a>
-          <a href="#pricing" className="text-black-100  hover:text-accent-500">
-            FAQs
-          </a> */}
         </nav>
 
-        <div className="hidden lg:flex items-center gap-[18px] font-inter text-paragraph-md">
+        <div className="flex items-center gap-[18px] font-inter text-paragraph-md">
+            <CountDown targetDate={targetDate} />
           <Button
             className="flex items-center bg-outline border-2  p-1.5 rounded-md text-white-50 " 
             >

@@ -1,22 +1,16 @@
 import React from "react";
-import Image from "next/image";
-import img from "../../../public/img/carte-replace.png";
-
+import Footer from "@/components/Footer";
+import { Header } from "@/components/Header";
+import Hero from "@/components/Hero";
 
 
 const page = () => {
   return (
-    
-      <div className="flex justify-center w-full mx-[100px] ">
-        <div className="">
-        <Image 
-        className="w-[920px] h-[600px] aspect-square"
-        src={img} 
-        alt={"carte"}
-        />
-        carte
-        </div>
-      </div>
+    <div>
+      <Header/>
+      <Hero/>
+      <Footer/>
+    </div>
   
   );
 };
