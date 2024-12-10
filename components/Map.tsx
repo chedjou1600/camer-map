@@ -43,7 +43,7 @@ const MultiLayerMap: React.FC = () => {
           style={() => ({
             color: layers[index].color,
             weight: 2,
-            fillOpacity: 0.3,
+            fillOpacitt: 0.3,
           })}
         />
       ))}
