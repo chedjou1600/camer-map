@@ -1,0 +1,21 @@
+{
+  "arrondissements": [
+    {
+      "name": "Darrak",
+      "candidates": [
+        { "name": "Candidat A", "percentage": 60 },
+        { "name": "Candidat B", "percentage": 30 },
+        { "name": "Candidat C", "percentage": 10 }
+      ]
+    },
+    {
+      "name": "Makari",
+      "candidates": [
+        { "name": "Candidat A", "percentage": 45 },
+        { "name": "Candidat B", "percentage": 35 },
+        { "name": "Candidat C", "percentage": 20 }
+      ]
+    }
+    
+  ]
+}
